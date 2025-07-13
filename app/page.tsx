@@ -1,12 +1,8 @@
-'use client';
-import Sidebar from '../components/Sidebar';
-import ProductGrid from '../components/ProductGrid';
+'use client'; // ⬅️ VERY IMPORTANT
+
+import { useSearchParams } from 'next/navigation';
 
 export default function HomePage() {
-  return (
-    <div className="flex mt-6">
-      <Sidebar />
-      <ProductGrid />
-    </div>
-  );
+  const searchParams = useSearchParams();
+  // your logic
 }
